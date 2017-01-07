@@ -16,7 +16,7 @@
     <g:passwordField name="password"/>
     <br>
     <g:actionSubmit value="Submit" action="login"/>
-    <a href="/view/signup">Signup</a>
+    <a href="/view/newuser">Signup</a>
 </g:form>
 </body>
 </html>

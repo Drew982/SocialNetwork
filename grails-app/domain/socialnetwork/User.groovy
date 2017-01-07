@@ -4,7 +4,7 @@ class User {
 
     static constraints = {
         username(unique: true)
-        description(size: 0..500)
+        description(nullable: true)
     }
 
     String username

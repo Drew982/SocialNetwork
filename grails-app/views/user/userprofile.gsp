@@ -16,5 +16,12 @@
 <br>
 <label>Description</label>
 <p>${user.description}</p>
+
+<button onclick="signout()">Signout</button>
+<script>
+    function signout() {
+        window.location.href = "/controller/logout";
+    }
+</script>
 </body>
 </html>

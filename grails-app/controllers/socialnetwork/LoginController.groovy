@@ -40,7 +40,5 @@ class LoginController {
         redirect(uri: "/view/login") //Returns to login page if failure
     }
 
-    def signup() {
 
-    }
 }

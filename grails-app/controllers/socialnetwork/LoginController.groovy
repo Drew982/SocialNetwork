@@ -20,12 +20,11 @@ class LoginController {
 //                redirect(controller: "user", action: "admin") //Redirects to /user/admin page if successful login
 
                 if(loginService.isAdmin(userInformation)) {
-//                    render("Hello")
                     redirect(controller: "admin", action: "list")
                 }
                 else
                 {
-                    render("User profile")
+                    redirect(controller: "user", action: "profile", params: [username: userInformation.username])
                 }
             }
             else

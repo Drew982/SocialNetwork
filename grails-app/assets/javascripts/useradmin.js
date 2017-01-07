@@ -23,5 +23,5 @@ function deleteByID(id) {
 }
 
 function signout() {
-    window.location.href="/logout";
+    window.location.href="/controller/logout";
 }

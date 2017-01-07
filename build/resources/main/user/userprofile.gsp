@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>User Profile</title>
+
+    <script>
+        function signout() {
+            window.location.href = "/controller/logout";
+        }
+    </script>
 </head>
 <body>
 <label>Name</label>
@@ -18,10 +24,7 @@
 <p>${user.description}</p>
 
 <button onclick="signout()">Signout</button>
-<script>
-    function signout() {
-        window.location.href = "/controller/logout";
-    }
-</script>
+
+<a href="/view/update?id=${user.id}">Update</a>
 </body>
 </html>
